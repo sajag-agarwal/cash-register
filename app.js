@@ -1,7 +1,10 @@
 var billValue = document.querySelector("#bill-ip");
 var cashValue = document.querySelector("#cash-ip");
 
-var billQuery = document.querySelector("button");
+
+var billQuery = document.querySelector("#bill-btn");
+var cashQuery = document.querySelector("#cash-btn");
+
 var displayResult = document.querySelector("#display-result");
 
 var twothousand = document.querySelector("#twothousand");
@@ -12,8 +15,12 @@ var ten = document.querySelector("#ten");
 var five= document.querySelector("#five");
 var one = document.querySelector("#one");
 
-
-function clickEventHandler(){
+function billClickEventHandler(){
+    cashQuery.disabled = false;
+    cashValue.disabled = false;
+}
+function cashClickEventHandler(){
+    billQuery.disabled = true;
     twothousand.innerText = 0;
     fivehundred.innerText = 0;
     onehundred.innerText = 0;
@@ -63,6 +70,7 @@ function clickEventHandler(){
     }
 }
 
-billQuery.addEventListener("click", clickEventHandler);
+billQuery.addEventListener("click", billClickEventHandler);
+cashQuery.addEventListener("click", cashClickEventHandler);
 
 
