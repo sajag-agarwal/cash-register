@@ -18,6 +18,7 @@ var one = document.querySelector("#one");
 function billClickEventHandler(){
     cashQuery.disabled = false;
     cashValue.disabled = false;
+    cashValue.placeholder = "Enter the cash (in Rs.)";
 }
 function cashClickEventHandler(){
     billQuery.disabled = true;

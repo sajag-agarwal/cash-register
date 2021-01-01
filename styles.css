@@ -1,6 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Ubuntu:wght@700&display=swap");
+:root {
+  --primary-color: #3b82f6;
+  --offprimary-color: #dbeafe;
+  --darkprimary-color: #1e3a8a;
+  --secondary-color: #047857;
+}
+body {
+  margin: 0px;
+}
 h1 {
   text-align: center;
   padding: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  background-color: var(--primary-color);
+  margin: 0px;
+}
+h2 {
+  text-align: center;
+  /* padding: 0.5rem; */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  margin: 1.2rem auto ;
+  width: 50%;
+  
 }
 div {
   margin-left: auto;
@@ -11,26 +36,58 @@ textarea {
   font-size: 2rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  border-color:#047857;
+  border-width: 0.2rem;
   width: 80%;
-  margin:1rem auto;
+  margin: 1rem auto;
+  color: var(--secondary-color);
 }
-button{
-    display: block;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    width:40%;
-    margin-left: auto;
-    margin-right: auto;
+button {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 8px #888888;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--offprimary-color);
 }
-table{
-    width: 70%;
+table {
+  width: 70%;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+  margin: 1rem auto;
+  background-color: var(--offprimary-color);
+  border-radius: 1rem;
+  /* border-collapse: collapse; */
+}
+
+th {
     
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+  margin: 0rem 0rem;
+  color: var(--darkprimary-color);
 }
-table, th, tr{
-    border: 1px solid black;
-    padding: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
+
+#bblr{
+    border-bottom-left-radius: 0.5rem;
+}
+#bbrr{
+    border-bottom-right-radius: 0.5rem;
+}
+#btlr{
+    border-top-left-radius: 0.5rem;
+}
+#btrr{
+    border-top-right-radius: 0.5rem;
+}
+#btlr, #btrr{
+    font-size: 1.5rem;
+    color:var(--secondary-color);
 }

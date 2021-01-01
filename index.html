@@ -10,15 +10,15 @@
     <h1>Cash Register</h1>
     <div><textarea placeholder="Enter the bill amt (in Rs.)" id="bill-ip" ></textarea>
         <button id="bill-btn">Press Enter.</button>
-        <textarea placeholder="Enter the cash (in Rs.)" id="cash-ip" disabled></textarea>
+        <textarea placeholder="You can enter the cash here only after you enter the bill." id="cash-ip" disabled></textarea>
     
     <button id="cash-btn" disabled>Press Enter to calculate the change.</button>
     </div>
-    <h1 id="display-result"></h1>
+    <h2 id="display-result"></h1>
     <table>
         <tr>
-            <th>Currency Value</th>
-            <th>Number of Notes</th>
+            <th id="btlr">Currency Value</th>
+            <th id="btrr">Number of Notes</th>
         </tr>
         <tr>
             <th>Rs. 2000</th>
@@ -45,8 +45,8 @@
             <th><div id="five" ></div></th>
         </tr>
         <tr>
-            <th>Rs. 1</th>
-            <th><div id="one" ></div></th>
+            <th id="bblr">Rs. 1</th>
+            <th id="bbrr"><div id="one" ></div></th>
         </tr>
     </table>
     
